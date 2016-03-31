@@ -1,66 +1,75 @@
+GIT
+  remote: https://github.com/PagesjaunesMobile/cucumber-ruby-core.git
+  revision: 4be6a9c21421379ab5e542c18512ceb76c56cbc1
+  branch: dynamicData
+  specs:
+    cucumber-core (1.4.0.1)
+      gherkin (~> 3.2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
     CFPropertyList (2.3.2)
     awesome_print (1.6.1)
     builder (3.2.2)
-    calabash-common (0.0.2)
-    calabash-cucumber (0.16.4)
+    calabash-cucumber (0.18.2)
       CFPropertyList
       awesome_print
       bundler (~> 1.3)
-      calabash-common (~> 0.0.2)
-      cucumber (~> 1.3.17)
+      cucumber
       edn (>= 1.0.6, < 2.0)
       geocoder (>= 1.1.8, < 2.0)
       httpclient (>= 2.3.2, < 3.0)
       json
-      run_loop (>= 1.5.5, < 2.0)
+      run_loop (>= 2.0.9, < 3.0)
       sim_launcher (~> 0.4.13)
       slowhandcuke (~> 0.0.3)
     command_runner_ng (0.1.0)
-    cucumber (1.3.20)
+    cucumber (2.3.3)
       builder (>= 2.1.2)
+      cucumber-core (~> 1.4.0)
+      cucumber-wire (~> 0.0.1)
       diff-lcs (>= 1.1.3)
-      gherkin (~> 2.12)
+      gherkin (~> 3.2.0)
       multi_json (>= 1.7.5, < 2.0)
       multi_test (>= 0.1.2)
+    cucumber-wire (0.0.1)
     diff-lcs (1.2.5)
     edn (1.1.0)
-    geocoder (1.2.12)
-    gherkin (2.12.2)
-      multi_json (~> 1.3)
-    httpclient (2.7.0.1)
+    geocoder (1.3.1)
+    gherkin (3.2.0)
+    httpclient (2.7.1)
     json (1.8.3)
     multi_json (1.11.2)
     multi_test (0.1.2)
     rack (1.6.4)
     rack-protection (1.5.3)
       rack
-    retriable (2.0.2)
-    run_loop (1.5.6)
+    run_loop (2.0.9)
       CFPropertyList (~> 2.2)
       awesome_print (~> 1.2)
       command_runner_ng (>= 0.0.2)
+      httpclient (~> 2.6)
       json (~> 1.8)
-      retriable (>= 1.3.3.1, < 2.1)
       thor (>= 0.18.1, < 1.0)
     sim_launcher (0.4.13)
       sinatra
-    sinatra (1.4.6)
-      rack (~> 1.4)
+    sinatra (1.4.7)
+      rack (~> 1.5)
       rack-protection (~> 1.4)
       tilt (>= 1.3, < 3)
     slowhandcuke (0.0.3)
       cucumber
     thor (0.19.1)
-    tilt (2.0.1)
+    tilt (2.0.2)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   calabash-cucumber
+  cucumber-core!
+  cucumber-wire
 
 BUNDLED WITH
-   1.10.6
+   1.11.2
