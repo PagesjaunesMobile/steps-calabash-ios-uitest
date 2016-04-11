@@ -15,7 +15,7 @@ end
 def run_calabash_test!
   puts
   puts 'cucumber'
-  system('cucumber -p ios')
+  system('cucumber -p ios --format html --out reports.html')
   fail_with_message('cucumber -- failed') unless $?.success?
 end
 
